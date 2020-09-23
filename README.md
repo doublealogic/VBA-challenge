@@ -1,8 +1,11 @@
-# VBA Homework - The VBA of Wall Street
+# The VBA of Wall Street
 
 ## Background
 
-This project dealt with mastering VBA concepts in Excel. We would need to use VBA scripting to analyze real stock market data. To start
+In this repository, I have uploaded a project assigned to me that dealt with mastering VBA concepts in Excel. 
+I would need to use VBA scripting to analyze real stock market data. To start, I was given two excel documents. 
+One document was a demo stock market data workbook that I could test my VBA scripts on. 
+The second held the real stock market data I would apply my VBA scripts to once the code
 
 ### Files
 
