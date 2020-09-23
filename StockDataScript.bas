@@ -1,7 +1,7 @@
 Attribute VB_Name = "Module1"
 Sub StockDataScript():
 '-----Variable List-----
-Dim i As Integer
+Dim i As Long
 Dim j As Integer
 Dim TableRow As Integer
 Dim LastRow As Double
@@ -44,19 +44,26 @@ For i = 2 To LastRow
         ClosePrice = Cells(i - 1, 6).Value
         YearlyChange = ClosePrice - OpenPrice
         If OpenPrice = 0 Then
-            PercentChange = 0
+            For k = i To LastRow
+                If Cells(k, 3).Value <> 0 Then
+                    OpenPrice = Cells(k, 3).Value
+                    PercentChange = YearlyChange / OpenPrice
+                    Exit For
+                Else
+                End If
+            Next k
         Else
             PercentChange = YearlyChange / OpenPrice
         End If
         '-----Update Analyzing Table with New Row-----
         Cells(TableRow, 9).Value = Ticker
-        Cells(TableRow, 10) = Format(YearlyChange, "Percent")
+        Cells(TableRow, 10).Value = YearlyChange
         If YearlyChange < 0 Then
             Cells(TableRow, 10).Interior.ColorIndex = 3
         Else
             Cells(TableRow, 10).Interior.ColorIndex = 4
         End If
-        Cells(TableRow, 11).Value = PercentChange
+        Cells(TableRow, 11) = Format(PercentChange, "Percent")
         Cells(TableRow, 12).Value = TotalStockVol
         '-----Update Greatest Values Variables and Table-----
         If PercentChange > GreatestInc Then
@@ -91,3 +98,4 @@ For i = 2 To LastRow
 Next i
 
 End Sub
+
