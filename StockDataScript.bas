@@ -69,14 +69,14 @@ For i = 2 To LastRow
         If PercentChange > GreatestInc Then
             Cells(2, 16).Value = Ticker
             GreatestInc = PercentChange
-            Cells(2, 17).Value = GreatestInc
+            Cells(2, 17) = Format(GreatestInc, "Percent")
         Else
         End If
         
         If PercentChange < GreatestDec Then
             Cells(3, 16).Value = Ticker
             GreatestDec = PercentChange
-            Cells(3, 17).Value = GreatestDec
+            Cells(3, 17) = Format(GreatestDec, "Percent")
         Else
         End If
         
