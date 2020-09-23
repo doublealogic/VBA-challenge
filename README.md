@@ -5,16 +5,11 @@
 In this repository, I have uploaded a project assigned to me that dealt with mastering VBA concepts in Excel. 
 I would need to use VBA scripting to analyze real stock market data. To start, I was given two excel documents. 
 One document was a demo stock market data workbook that I could test my VBA scripts on. 
-The second held the real stock market data I would apply my VBA scripts to once the code
-
-### Files
-
-
-### Stock market analyst
+The second held the real stock market data I would apply my VBA scripts to once the code was complete.
 
 ## Instructions
 
-* Create a script that will loop through all the stocks for one year and output the following information.
+* Overall, I would need to create a script that would loop through all the stocks for one year and output the following information.
 
   * The ticker symbol.
 
@@ -24,12 +19,12 @@ The second held the real stock market data I would apply my VBA scripts to once 
 
   * The total stock volume of the stock.
 
-* You should also have conditional formatting that will highlight positive change in green and negative change in red.
+* I also needed conditional formatting that would highlight positive changes in green and negative changes in red.
 
 ### CHALLENGES
 
-1. Your solution will also be able to return the stock with the "Greatest % increase", "Greatest % decrease" and "Greatest total volume".
+1. I also had a bonus challenge of being able to return the stock with the "Greatest % increase", "Greatest % decrease" and "Greatest total volume".
 
-2. Make the appropriate adjustments to your VBA script that will allow it to run on every worksheet, i.e., every year, just by running the VBA script once.
+2. I the made the appropriate adjustments to my VBA script that allowed it to run on every worksheet, i.e., every year, just by running the VBA script once.
 
 
